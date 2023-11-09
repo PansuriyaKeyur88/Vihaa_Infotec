@@ -121,7 +121,7 @@
     max-width: 260px;
     width: 100%;
     border-right: 1px solid rgba(255, 255, 255, .3);
-    height: 160%;
+    height: 134.5%;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
     background-color: #1d1d1d;
     margin-left: 95px;
@@ -233,7 +233,26 @@
 }
 
 .video {
-    margin-top: 7rem;
+    margin-top: 6.5rem;
+    vertical-align: middle;
+
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 100px) {
+
+    .video {
+        margin-top: 1rem;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width:769px) {
+
+    .video {
+        margin-top: 1rem;
+    }
+
 }
 
 .arrow {
@@ -241,7 +260,7 @@
     display: flex;
 }
 
-.arrow a{
+.arrow a {
     font-weight: 400;
     font-size: 15px;
     letter-spacing: .03em;
@@ -268,12 +287,212 @@
     transform: rotate(0deg);
 }
 
-.arrow span{
+.arrow span {
     margin-left: -16px;
     transition: .5s;
     font-size: 1.3rem;
 }
 
-.arrow:hover{
+.arrow:hover {
     margin-left: 0px;
+}
+
+
+/* Scroll-Down */
+
+.scroll-down a {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.scroll-down a span {
+    width: 3px;
+    height: 121px;
+    background: white;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.scroll-down span::after {
+    content: "";
+    width: 100%;
+    height: 25px;
+    background: #027EBC;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: up-down 1.5s linear infinite;
+}
+
+@keyframes up-down {
+
+    0% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(121px);
+    }
+
+}
+
+
+/* language */
+
+.language {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    border-top: 2px solid rgba(255, 255, 255, .3);
+    margin-top: 5.3rem;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 100px) {
+
+    .language {
+        margin-top: 0.1rem;
+
+    }
+}
+
+
+.sub-language {
+    width: 100px;
+    display: flex;
+    gap: 30px;
+    transform: translateX(0px);
+    animation: 40s linear 0s infinite normal none running slider;
+}
+
+@keyframes slider {
+    100% {
+        transform: translateX(-1174.2px);
+    }
+}
+
+/* review */
+
+.side {
+    margin-left: 82px;
+}
+
+@media only screen and (max-width: 988px) and (min-width: 100px) {
+
+    .side {
+        margin-left: -2px;
+    }
+}
+
+.fa-star {
+    gap: 200px;
+    padding-top: 15px;
+}
+
+
+.review a {
+    padding: 15px 25px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 988px) and (min-width: 100px) {
+
+    .review a {
+        padding: 15px;
+    }
+}
+
+
+/* counter-area */
+
+.counter-area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -moz-columns: 4;
+    columns: 4;
+    gap: 0;
+}
+
+.review-and-counter-area .counter-area ul li {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.number {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 799px) and (min-width: 100px) {
+
+    .counter-area ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        -moz-columns: 1;
+        columns: 1;
+        gap: 0;
+        align-items: center;
+        margin-top: -3rem;
+    }
+
+    .counter-area ul li {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .number {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.number h3 {
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 45px;
+}
+
+.number span {
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 1rem;
+}
+
+.content p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    color: #b5b5b5;
+    padding-top: 3px;
+}
+
+.remove-container-fluid{
+    margin-right: -0px;
+}
+
+.container-fluid{
+    margin-right: -0px;
 }
