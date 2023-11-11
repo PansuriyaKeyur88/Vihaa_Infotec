@@ -707,21 +707,21 @@
 
 
 .solution_icon-1 img {
-    background: url("/image/asset\ 17.svg");
+    background-image: url("/image/asset\ 17.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 55px;
 }
 
 .solution_icon-2 img {
-    background: url("/image/asset\ 18.svg");
+    background-image: url("/image/asset\ 18.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 55px;
 }
 
 .solution_icon-3 img {
-    background: url("/image/asset\ 19.svg");
+    background-image: url("/image/asset\ 19.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 55px;
