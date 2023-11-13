@@ -18,6 +18,23 @@ counters.forEach(counter => {
     animate();
 });
 
-
-
   
+// Dropdowm Animation //
+
+var dropdownBtn = document.querySelectorAll('.fa-plus');
+lastOpened = null;
+
+dropdownBtn.forEach(btn => btn.addEventListener('click', function () {
+    var menuContent = this.nextElementSibling;
+    if (!menuContent.classList.contains("show")) {
+        menuContent.classList.add("show");
+        menuContent.classList.remove("hide");
+    } else {
+        menuContent.classList.add("hide");
+        menuContent.classList.remove("show");
+    }
+
+    if (lastOpened && lastOpened !== menuContent)
+        lastOpened.classList.remove("show");
+    lastOpened = menuContent;
+}));
