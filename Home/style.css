@@ -227,7 +227,6 @@
 
 }
 
-
 .fa-plus{
     position: absolute;
     left: 115%;
@@ -238,12 +237,12 @@
     color: white;
 }
 
-.offcanvas-body-navbar-option-choice ul li a{
+.offcanvas-body-navbar-option-choice{
     display: none;
 }
 
-.fa-plus:hover .offcanvas-body-navbar-option-choice ul li a{
-    display:block;
+.offcanvas-body-navbar-2-option:hover + .offcanvas-body-navbar-option-choice{
+    display: block;
 }
 
 
@@ -327,7 +326,7 @@
 }
 
 
-@media screen and (max-width:989px) and (min-width:601px) {
+@media screen and (max-width:989px) and (min-width:100px) {
 
     .offcanvas-body-navbar-2 ul li a{
         font-size: 2.4rem;
@@ -458,9 +457,8 @@
 }
 
 .video {
-    margin-top: 6.5rem;
+    margin-top: 8.5rem;
     vertical-align: middle;
-
 }
 
 
@@ -506,9 +504,10 @@
     transition: .6s;
 }
 
-.arrow i:hover {
+
+.scroll-down-btn:hover i{
     color: #027EBC;
-    border: 1px solid #027EBC;
+    border: 2px solid #027EBC;
     transform: rotate(0deg);
 }
 
@@ -518,8 +517,10 @@
     font-size: 1.3rem;
 }
 
-.arrow:hover {
-    margin-left: 0px;
+.scroll-down-btn:hover span{
+    margin-left: 10px;
+    color: #027EBC;
+    font-size: 1.3rem;
 }
 
 
@@ -535,6 +536,19 @@
     align-items: center;
     gap: 15px;
     text-decoration: none;
+    position: relative;
+    top: 5.8rem;
+}
+
+
+@media screen and (max-width:1200px) 
+{
+
+    .scroll-down a {
+        position: relative;
+        top: 0.5rem;
+    }
+    
 }
 
 .scroll-down a span {
@@ -641,6 +655,15 @@
 }
 
 
+.customer-review{
+    background:url('./image/asset\ 67.png'),no-repeat,linear-gradient(to right,#1d1d1d, #132026);
+}
+
+.counter-area{
+    background-color: #121212;
+}
+
+
 /* counter-area */
 
 .counter-area ul {
@@ -716,11 +739,20 @@
 
 .remove-container-fluid {
     margin-right: -0px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    /* padding-left: calc(var(--bs-gutter-x) * .5); */
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.container-fluid {
-    margin-right: -0px;
-}
+/* .single-counter{
+    border-right: 2px solid white;
+    padding-left:10px ;
+} */
+
 
 /* About Section */
 
@@ -1218,6 +1250,7 @@
 
 .industries-server:hover .industries-server-icon img {
     animation: spin 0.5s linear;
+    border: 1px dashed #027EBC;
 }
 
 @keyframes spin {
