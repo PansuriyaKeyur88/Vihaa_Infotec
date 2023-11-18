@@ -189,7 +189,7 @@
 .offcanvas-body-navbar ul li a{
     padding: 4px 0;
     display: inline-block;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     color: white;
     transition: all .6s ease;
@@ -213,18 +213,6 @@
 
 .offcanvas-body-navbar-option ul li{
     padding-left: 2rem;
-}
-
-.offcanvas-body-navbar-option-choice ul li a{
-    font-size: 22px;
-    font-weight: 400;
-    padding: 7px 5px;
-    font-style: normal;
-    text-transform: capitalize;
-    -webkit-text-stroke: unset;
-    -webkit-text-fill-color: unset;
-    color: white;
-
 }
 
 .fa-plus{
@@ -326,12 +314,20 @@
 }
 
 
-@media screen and (max-width:989px) and (min-width:100px) {
+@media screen and (max-width:500px) and (min-width:100px) {
 
-    .offcanvas-body-navbar-2 ul li a{
+    .offcanvas-body-navbar-2 ul li a {
         font-size: 2.4rem;
     }
-    
+
+}
+
+@media screen and (max-width:989px) and (min-width:501px) {
+
+    .offcanvas-body-navbar-2 ul li a {
+        font-size: 5rem;
+    }
+
 }
 
 
@@ -1558,6 +1554,13 @@
     color: #e4e4e4;
 }
 
+.author-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:start;
+}
+
 .author-contect h4 {
     font-weight: 600;
     font-size: 24px;
@@ -1571,6 +1574,7 @@
     letter-spacing: 0.1em;
     color: #027EBC;
 }
+
 
 /* developement-section */
 
