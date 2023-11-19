@@ -531,7 +531,7 @@
 
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
 
 
     .experience-team-images-sm {
@@ -540,10 +540,19 @@
 
 }
 
-@media screen and (max-width:1500px) and (min-width:501px) {
+@media screen and (max-width:1000px) and (min-width:601px){
+
 
     .experience-team-images-sm {
-        margin-right: -1.5rem;
+        margin-right: 6.5rem;
+    }
+
+}
+
+@media screen and (max-width:1500px) and (min-width:1001px) {
+
+    .experience-team-images-sm {
+        margin-right: -1rem;
     }
 
 }
