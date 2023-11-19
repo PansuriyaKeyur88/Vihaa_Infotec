@@ -352,7 +352,7 @@
 
 .about-main-section {
     position: relative;
-    background-image: url("./Image/aboutus-bg.png"), linear-gradient(#1d1d1d, #1d1d1d);
+    background-image: url("image/aboutus-bg.png"), linear-gradient(#1d1d1d, #1d1d1d);
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
